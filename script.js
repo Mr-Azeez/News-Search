@@ -22,7 +22,7 @@ searchButton.addEventListener("click", async ()=> {
     if(query != ""){
         try{
             const articles = await fetchNewsQuery(query);
-            displayBlogs(articles)
+            displayBlogs(articles);
         }catch(error){
             console.log("Error fetching news by query", error);
         }
