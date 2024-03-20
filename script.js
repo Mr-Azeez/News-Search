@@ -78,7 +78,7 @@ function displayBlogs(articles){
 (async ()=> {
     try {
         const articles = await fetchRandomNews();
-        displayBlogs(articles)
+        displayBlogs(articles);
     } catch(error) {
         console.error("Error Fetching random news", error);
         
